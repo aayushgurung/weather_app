@@ -18,30 +18,47 @@
     <main>
       <div class="container custom-container" id="contain">
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="weather_container">
+          <div class="weather-container">
             <div class="row">
-              <div
-                class="search"
-              >
+              <div class="search">
                 <input
                   type="text"
                   placeholder="Search Location"
                   class="search-placeholder mx-md-4"
                 />
-                <button class="search-btn mx-md-4"><img src="./static/images/search.png" alt=""></button>
+                <button class="search-btn mx-md-4">
+                  <img src="./static/images/search.png" alt="" />
+                </button>
               </div>
             </div>
-
             <div class="row">
-              <img src="./static/images/clear.png" alt="" id="weather-icon" />
+              <img
+                src="./static/images/partial_cloudy.png"
+                alt=""
+                id="weather-icon"
+              />
             </div>
-            <div class="row"><div id="degree">7C</div></div>
+            <div class="row"><div id="degree">7°C</div></div>
             <div class="row">
               <div id="city">New York</div>
             </div>
-            <div class="row">
-              <div class="col-md-6 mx-auto" id="details">Humidity</div>
-              <div class="col-md-6 mx-auto" id="details">Wind Speed</div>
+            <div class="row"><div id="text"></div></div>
+            <div class="row mt-4 align-items-center">
+              <div class="col-md-6 mx-auto" id="details">
+                <img src="./static/images/humidity.png" alt="" id="h-w-icon" />
+                <div class="row h-w-row"><span class="humidity">48%</span></div>
+                <div class="row mx-auto">Humidity</div>
+              </div>
+              <div class="col-md-6 mx-auto" id="details">
+                <div class="row h-w-row">
+                  <img
+                    src="./static/images/wind.png"
+                    alt=""
+                    id="h-w-icon"
+                  /><span class="wind">10 km/h</span>
+                </div>
+                <div class="row mx-auto">Wind</div>
+              </div>
             </div>
           </div>
         </div>
@@ -52,6 +69,12 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity=""
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script src="./static/js/index.js"></script>
   </body>
