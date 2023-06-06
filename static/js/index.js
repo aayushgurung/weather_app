@@ -8,6 +8,7 @@ let weather={
         .then((response)=> response.json())
         .then((data)=> this.displayWeather(data));
         console.log('inside fetchWeatehr');
+        console.log(`https://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${city}&days=3&aqi=yes&alerts=yes`);
     },
     displayWeather:function(data){
         const { name }=data.location;
